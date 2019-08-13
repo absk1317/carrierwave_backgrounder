@@ -3,6 +3,7 @@ module CarrierWave
   module Workers
 
     module StoreAssetMixin
+      require 'open-uri'
       include CarrierWave::Workers::Base
 
       def self.included(base)
